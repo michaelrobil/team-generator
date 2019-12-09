@@ -47,7 +47,7 @@ function internPrompt() {
     prompt.get(internInfo, function(err, result) {
         new Intern(`${result.internName}`, `${result.id}`, `${result.email}`, `${result.school}`);
         internUpdated.push(result.internName, result.id, result.email, result.school);
-        saveData();
+        saveData(() => writeNewFile());
     });
 }
 
@@ -60,13 +60,13 @@ function allPrompts() {
     });
 }
 
-function saveData() {
+function saveData(callback) {
     fs.writeFile("./savedData/manager.json", JSON.stringify(managerUpdated), function(err) { if (err) throw err });
     fs.writeFile("./savedData/firstEng.json", JSON.stringify(firstEngineerUpdated), function(err) { if (err) throw err });
     fs.writeFile("./savedData/secondEng.json", JSON.stringify(secondEngineerUpdated), function(err) { if (err) throw err });
     fs.writeFile("./savedData/thirdEng.json", JSON.stringify(thirdEngineerUpdated), function(err) { if (err) throw err });
     fs.writeFile("./savedData/intern.json", JSON.stringify(internUpdated), function(err) { if (err) throw err });
-    writeNewFile();
+    callback();
 }
 
 allPrompts();
