@@ -9,7 +9,7 @@ This is a command-line application that allows the employer to generate html aft
 ## Technology
 - CLI
 - Javascript
-- Node
+- Node, Inquirer.js
 - Jest
 
 ## License
