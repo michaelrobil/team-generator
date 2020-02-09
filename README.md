@@ -3,6 +3,9 @@
 ## About
 This is a command-line application that allows the employer to generate html after filling the required information. 
 
+## Application ScreeShot
+![10-employeeCli](https://user-images.githubusercontent.com/56613553/74096108-f5b96b80-4abf-11ea-9136-495bea97cace.png)
+
 ## Contributors
 [Michael Robil](https://github.com/michaelrobil)
 
