@@ -1,4 +1,4 @@
-# team-generator
+# Team-Generator
 
 ## About
 This is a command-line application that allows the employer to generate html after filling the required information. 
