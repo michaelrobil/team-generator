@@ -3,6 +3,9 @@
 ## About
 This is a command-line application that allows the employer to generate html after filling the required information. 
 
+## Applicaion Screenshot
+![09-team](https://user-images.githubusercontent.com/56613553/74096776-d2df8500-4ac8-11ea-9711-99a4acf51826.png)
+
 ## Contributors
 [Michael Robil](https://github.com/michaelrobil)
 
